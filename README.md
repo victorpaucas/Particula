@@ -1,5 +1,5 @@
-# <img src="https://user-images.githubusercontent.com/59380623/78463008-a21d6580-769d-11ea-9cc6-d328c1957891.png" width="25"> **Particula**
-Diseño web de particulas con seguimiento al cursor
+# <img src="https://user-images.githubusercontent.com/59380623/78463008-a21d6580-769d-11ea-9cc6-d328c1957891.png" width="25"> **Partícula**
+Diseño web de partículas con seguimiento al cursor
 
 ## 1. Instalación
 Iniciar el archivo cursor.html de la siguiente ruta.
