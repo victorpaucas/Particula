@@ -5,8 +5,6 @@ Diseño web de particulas con seguimiento al cursor
 Iniciar el archivo index.html de la siguiente ruta.
 > ~\source\index.html
 
-![image](https://user-images.githubusercontent.com/59380623/78463045-0fc99180-769e-11ea-8878-67085fcd77e6.png)
-
 ## 2. Ejemplo
 Pasar el cursor por la pantalla
 
