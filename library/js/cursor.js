@@ -5,10 +5,10 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 //inicializar cursor
-const mouse = {x: null, y: null};
+const mouse = { x: null, y: null };
 
 //agregar evento mousemove para capturar las coordenadas
-window.addEventListener('mousemove', function() {
+window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
 });
@@ -45,9 +45,9 @@ class particle {
     update() {
         this.size -= 0.3;
 
-        if(this.size < 0) {
-            this.x = (mouse.x + ((Math.random() * 20) -10));
-            this.y = (mouse.y + ((Math.random() * 20) -10));
+        if (this.size < 0) {
+            this.x = (mouse.x + ((Math.random() * 20) - 10));
+            this.y = (mouse.y + ((Math.random() * 20) - 10));
             this.size = (Math.random() * 10) + 2;
             this.weight = (Math.random() * 2) - 0.5;
         }
@@ -55,7 +55,7 @@ class particle {
         this.y += this.weight;
         this.weight += 0.2;
 
-        if(this.y > canvas.height - this.size) {
+        if (this.y > canvas.height - this.size) {
             this.weight *= -1;
         }
     }
@@ -65,7 +65,7 @@ class particle {
 function init() {
     particles = [];
 
-    for(let index = 0; index < quantityParticles; index++) {
+    for (let index = 0; index < quantityParticles; index++) {
         let x = 0;
         let y = 0;
         let size = 0;
@@ -79,7 +79,7 @@ function init() {
 function animate() {
     context.fillStyle = 'rgba(0,0,0,0.05)';
     context.fillRect(0, 0, canvas.width, canvas.height);
-    for(let index = 0; index < particles.length; index++) {
+    for (let index = 0; index < particles.length; index++) {
         particles[index].update();
         particles[index].draw();
     }
